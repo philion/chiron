@@ -1,0 +1,83 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.acmerocket</groupId>
+    <artifactId>chiron</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <name>Chiron</name>
+    
+    <description></description>
+    <url></url>
+    <inceptionYear>2011</inceptionYear>
+    <developers>
+        <developer>
+            <id>philion</id>
+            <email>philion@acmerocket.com</email>
+            <name>Paul Philion</name>
+            <roles>
+                <role>developer</role>
+                <role>evil genius</role>
+            </roles>
+        </developer>
+    </developers>
+    <scm>
+    </scm>
+    <distributionManagement>
+    </distributionManagement>
+    
+    <repositories>
+        <repository>
+            <name>FitBit GitHub Repo</name>
+            <id>fitbit4j</id>
+            <url>https://raw.github.com/Fitbit/fitbit4j/gh-pages/release</url>
+        </repository>
+    </repositories>
+    
+    <pluginRepositories>
+    </pluginRepositories>
+    
+    <dependencies>
+        <dependency>
+            <groupId>com.fitbit</groupId>
+            <artifactId>fitbit4j</artifactId>
+            <version>1.0.22</version>
+        </dependency>
+    
+        <dependency>
+            <groupId>commons-codec</groupId>
+            <artifactId>commons-codec</artifactId>
+            <version>1.6</version>
+        </dependency>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.10</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.0.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-databind</artifactId>
+            <version>2.0.1</version>
+        </dependency>
+    </dependencies>
+    
+    <build>
+        <pluginManagement>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-compiler-plugin</artifactId>
+                    <configuration>
+                        <source>1.6</source>
+                        <target>1.6</target>
+                    </configuration>
+                </plugin>
+            </plugins>
+        </pluginManagement>
+    </build>
+
+</project>
